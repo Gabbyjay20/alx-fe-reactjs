@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Search from "./components/Search.js";
+import Search from "./components/Search";
 import Results from "./components/Results";
 import { searchUsers } from "./services/githubService";
 
