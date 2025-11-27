@@ -16,7 +16,6 @@ export const searchUsers = async ({ username, location, minRepos }) => {
     const response = await axios.get(url);
     return response.data.items;
   } catch (error) {
-    console.error("Error fetching users:", error);
     return [];
   }
 };
