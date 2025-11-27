@@ -1,12 +1,21 @@
+import { useState } from "react";
 import Search from "./components/Search";
+import Results from "./components/Results";
+import { searchUsers } from "./services/githubService";
 
-function App() {
+export default function App() {
+  const [users, setUsers] = useState([]);
+
+  const handleSearch = async (criteria) => {
+    const results = await searchUsers(criteria);
+    setUsers(results);
+  };
+
   return (
-    <div>
-      <h1>GitHub User Search</h1>
-      <Search />
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold text-center mb-8">GitHub User Search</h1>
+      <Search onSearch={handleSearch} />
+      <Results users={users} />
     </div>
   );
 }
-
-export default App;

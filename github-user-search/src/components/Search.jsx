@@ -1,58 +1,47 @@
 import { useState } from "react";
-import { fetchUserData } from "../services/githubService";
 
-export default function Search() {
+export default function Search({ onSearch }) {
   const [username, setUsername] = useState("");
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [location, setLocation] = useState("");
+  const [minRepos, setMinRepos] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
-    setUser(null);
-
-    try {
-      const data = await fetchUserData(username);
-      setUser(data);
-    } catch (err) {
-      setError("Looks like we cant find the user");
-    } finally {
-      setLoading(false);
-    }
+    onSearch({ username, location, minRepos });
   };
 
   return (
-    <div className="search-container">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Search GitHub username..."
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <button type="submit">Search</button>
-      </form>
-
-      {/* Conditional Rendering */}
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      {user && (
-        <div className="user-card">
-          <img
-            src={user.avatar_url}
-            alt={user.login}
-            width="100"
-            style={{ borderRadius: "8px" }}
-          />
-          <h3>{user.login}</h3>
-          <a href={user.html_url} target="_blank" rel="noopener noreferrer">
-            View Profile
-          </a>
-        </div>
-      )}
-    </div>
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col space-y-4"
+    >
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        className="border rounded py-2 px-3"
+      />
+      <input
+        type="text"
+        placeholder="Location"
+        value={location}
+        onChange={(e) => setLocation(e.target.value)}
+        className="border rounded py-2 px-3"
+      />
+      <input
+        type="number"
+        placeholder="Minimum Repositories"
+        value={minRepos}
+        onChange={(e) => setMinRepos(e.target.value)}
+        className="border rounded py-2 px-3"
+      />
+      <button
+        type="submit"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Search
+      </button>
+    </form>
   );
 }
