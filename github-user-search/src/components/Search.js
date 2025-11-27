@@ -11,34 +11,37 @@ export default function Search({ onSearch }) {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col space-y-4"
-    >
+    <form onSubmit={handleSubmit} className="p-4 space-y-4">
       <input
+        name="username"
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="border rounded py-2 px-3"
+        className="border p-2 rounded w-full"
       />
+
       <input
+        name="location"
         type="text"
         placeholder="Location"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-        className="border rounded py-2 px-3"
+        className="border p-2 rounded w-full"
       />
+
       <input
+        name="minRepos"
         type="number"
         placeholder="Minimum Repositories"
         value={minRepos}
         onChange={(e) => setMinRepos(e.target.value)}
-        className="border rounded py-2 px-3"
+        className="border p-2 rounded w-full"
       />
+
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-600 text-white p-2 rounded w-full"
       >
         Search
       </button>
