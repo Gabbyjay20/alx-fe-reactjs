@@ -1,16 +1,16 @@
 import axios from "axios";
-import { searchUsers } from "./githubService";
+import { fetchUserData } from "./githubService";
 
 jest.mock("axios");
 
 describe("GitHub API", () => {
   it("should call the GitHub API with the correct endpoint", async () => {
-    axios.get.mockResolvedValue({ data: { items: [] } });
+    axios.get.mockResolvedValue({ data: { login: "octocat" } });
 
-    await searchUsers({ username: "octocat" });
+    await fetchUserData("octocat");
 
     expect(axios.get).toHaveBeenCalledWith(
-      "https://api.github.com/search/users?q=octocat&per_page=20"
+      "https://api.github.com/users/octocat"
     );
   });
 });
