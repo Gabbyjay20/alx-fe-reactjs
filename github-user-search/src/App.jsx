@@ -1,18 +1,10 @@
-import React from 'react';
-import './App.css';
+import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>GitHub User Search</h1>
-      </header>
-      <main>
-        {/* Search component will go here */}
-      </main>
-      <footer>
-        <p>GitHub User Search App</p>
-      </footer>
+    <div>
+      <h1>GitHub User Search</h1>
+      <Search />
     </div>
   );
 }
