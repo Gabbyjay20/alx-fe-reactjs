@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false,
   theme: {
@@ -6,3 +6,9 @@ module.exports = {
   },
   plugins: [],
 }
+
+if (typeof module !== 'undefined') {
+  module.exports = config
+}
+
+export default config
