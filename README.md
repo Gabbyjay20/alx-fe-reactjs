@@ -4,6 +4,7 @@ This project is built with React and Tailwind CSS as part of the ALX Frontend pr
 
 ## Task 0
 
-- React app created using Vite
-- Tailwind CSS installed and configured
-- Tailwind included in global CSS
+- React app created
+- Tailwind CSS installed
+- Tailwind configured
+- Tailwind included in index.css
