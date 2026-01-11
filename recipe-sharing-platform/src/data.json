@@ -3,36 +3,164 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or bacon",
+      "4 large eggs",
+      "100g Pecorino Romano cheese",
+      "100g Parmesan cheese",
+      "Black pepper to taste",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook spaghetti according to package directions.",
+      "While pasta cooks, cut pancetta into small cubes and fry in a large pan until crispy.",
+      "In a bowl, whisk together eggs, grated cheeses, and black pepper.",
+      "When pasta is cooked, reserve 1 cup of pasta water, then drain.",
+      "Add hot pasta to the pan with pancetta, remove from heat.",
+      "Quickly pour egg mixture over pasta and toss vigorously to create a creamy sauce.",
+      "Add pasta water as needed to achieve desired consistency.",
+      "Serve immediately with extra cheese and black pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast, cubed",
+      "1 cup yogurt",
+      "2 tbsp tikka masala spice",
+      "400g canned tomatoes",
+      "1 cup heavy cream",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 inch ginger, grated",
+      "2 tbsp butter",
+      "Fresh cilantro for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and half the tikka masala spice for at least 1 hour.",
+      "Grill or pan-fry the marinated chicken until cooked through and slightly charred.",
+      "In a large pan, melt butter and sauté onion until golden.",
+      "Add garlic and ginger, cook for 1 minute.",
+      "Add remaining spices and canned tomatoes, simmer for 15 minutes.",
+      "Blend the sauce until smooth, then return to pan.",
+      "Add cream and cooked chicken, simmer for 10 minutes.",
+      "Garnish with fresh cilantro and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Beef Tacos",
     "summary": "Seasoned ground beef in crispy taco shells topped with fresh vegetables and cheese.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "1 cup shredded lettuce",
+      "1 cup diced tomatoes",
+      "1 cup shredded cheddar cheese",
+      "1/2 cup sour cream",
+      "1/4 cup salsa",
+      "1 onion, diced"
+    ],
+    "instructions": [
+      "Brown the ground beef in a large skillet over medium-high heat.",
+      "Drain excess fat and add taco seasoning with water as directed.",
+      "Simmer for 5 minutes until sauce thickens.",
+      "Warm taco shells according to package directions.",
+      "Fill each shell with seasoned beef.",
+      "Top with lettuce, tomatoes, cheese, sour cream, and salsa.",
+      "Serve immediately with lime wedges on the side."
+    ]
   },
   {
     "id": 4,
     "title": "Vegetable Stir Fry",
     "summary": "A colorful mix of fresh vegetables stir-fried in a savory sauce with garlic and ginger.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 cups broccoli florets",
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "1 cup snap peas",
+      "1 carrot, julienned",
+      "3 cloves garlic, minced",
+      "1 inch ginger, grated",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 tbsp vegetable oil"
+    ],
+    "instructions": [
+      "Prepare all vegetables and set aside.",
+      "Mix soy sauce and sesame oil in a small bowl.",
+      "Heat vegetable oil in a wok or large pan over high heat.",
+      "Add garlic and ginger, stir for 30 seconds.",
+      "Add broccoli and carrots first, stir-fry for 2 minutes.",
+      "Add remaining vegetables and stir-fry for 3-4 minutes.",
+      "Pour sauce over vegetables and toss to coat.",
+      "Serve hot over steamed rice."
+    ]
   },
   {
     "id": 5,
     "title": "Chocolate Lava Cake",
     "summary": "A decadent chocolate dessert with a warm, gooey molten center.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g dark chocolate",
+      "100g butter",
+      "2 eggs",
+      "2 egg yolks",
+      "50g sugar",
+      "2 tbsp flour",
+      "Butter for greasing",
+      "Cocoa powder for dusting",
+      "Vanilla ice cream for serving"
+    ],
+    "instructions": [
+      "Preheat oven to 425°F (220°C).",
+      "Melt chocolate and butter together in a double boiler.",
+      "Whisk eggs, egg yolks, and sugar until thick and pale.",
+      "Fold melted chocolate into egg mixture.",
+      "Gently fold in flour until just combined.",
+      "Grease 4 ramekins with butter and dust with cocoa powder.",
+      "Divide batter among ramekins.",
+      "Bake for 12-14 minutes until edges are firm but center is soft.",
+      "Let cool for 1 minute, then invert onto plates.",
+      "Serve immediately with vanilla ice cream."
+    ]
   },
   {
     "id": 6,
     "title": "Greek Salad",
     "summary": "Fresh cucumbers, tomatoes, olives, and feta cheese with olive oil dressing.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 large cucumbers, chunked",
+      "4 ripe tomatoes, chunked",
+      "1 red onion, thinly sliced",
+      "200g feta cheese, cubed",
+      "1 cup Kalamata olives",
+      "1 green bell pepper, sliced",
+      "4 tbsp extra virgin olive oil",
+      "2 tbsp red wine vinegar",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Cut cucumbers and tomatoes into large chunks.",
+      "Slice red onion into thin rings.",
+      "Combine vegetables in a large bowl.",
+      "Add olives and cubed feta cheese.",
+      "Whisk together olive oil, vinegar, oregano, salt, and pepper.",
+      "Pour dressing over salad and toss gently.",
+      "Let sit for 10 minutes to allow flavors to meld.",
+      "Serve at room temperature."
+    ]
   }
 ]
